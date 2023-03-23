@@ -68,6 +68,7 @@ class Boilerplate extends BaseConfig
                 'bg'   => 'gray-dark',
                 'logo' => [
                     'icon'   => 'favicon.ico', // path to image | this example icon on public root folder.
+                    'text'   => '<strong>Bo</strong>ilerplate',
                     'shadow' => 2,
                     'circle' => false,
                 ],
