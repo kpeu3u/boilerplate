@@ -1,6 +1,6 @@
 <aside class="main-sidebar <?= config('Boilerplate')->theme['sidebar']['border'] ? 'border-right' : ''?> sidebar-<?= config('Boilerplate')->theme['sidebar']['type'] ?>-<?= config('Boilerplate')->theme['sidebar']['links']['bg'] ?> elevation-<?= config('Boilerplate')->theme['sidebar']['shadow'] ?>">
     <a href="<?= route_to('/') ?>" class="brand-link <?= ! empty(config('Boilerplate')->theme['sidebar']['brand']['bg']) ? 'bg-' . config('Boilerplate')->theme['sidebar']['brand']['bg'] : '' ?>">
-        <img src="<?= base_url(config('Boilerplate')->theme['sidebar']['brand']['logo']['icon']) ?>" class="brand-image img-circle elevation-<?= config('Boilerplate')->theme['sidebar']['brand']['logo']['shadow'] ?>" style="opacity: .8">
+        <img src="<?= base_url(config('Boilerplate')->theme['sidebar']['brand']['logo']['icon']) ?>" class="brand-image <?= config('Boilerplate')->theme['sidebar']['brand']['logo']['circle'] ? 'img-circle' : ''; ?> elevation-<?= config('Boilerplate')->theme['sidebar']['brand']['logo']['shadow'] ?>" style="opacity: .8">
         <span class="brand-text"><?= config('Boilerplate')->theme['sidebar']['brand']['logo']['text'] ?></span>
     </a>
     <div class="sidebar">

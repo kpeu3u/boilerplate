@@ -36,7 +36,8 @@ class CreateMenuTable extends Migration
             'menu_id'  => ['type' => 'int', 'constraint' => 11, 'unsigned' => true, 'default' => 0],
         ]);
 
-        $this->forge->addKey(['id', 'group_id', 'menu_id']);
+        $this->forge->addPrimaryKey('id');
+        $this->forge->addKey(['group_id', 'menu_id']);
         $this->forge->addForeignKey('menu_id', 'menu', 'id', '', 'CASCADE');
         $this->forge->addForeignKey('group_id', 'auth_groups', 'id', '', 'CASCADE');
         $this->forge->createTable('groups_menu', true);
